@@ -1,12 +1,3 @@
-<?php
-
-$host="localhost"
-$user="root"
-$password=""
-$db="demo"
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +9,14 @@ $db="demo"
 <body>
 <div class="loginside">
         <h1>Login</h1>
-        <form action="log-inn">
-        <p>brukernavn/passord</p>
-        <input type="text" name="Bruker" placeholder="Brukernavn">
-        <p>passord</p>
-        <input type="text" name="passord" placeholder="Passord">
+        <form action="intility.php" method="post">
+            <p>brukernavn/passord</p>
+            <input type="text" name="Bruker" placeholder="Brukernavn">
+            <p>passord</p>
+            <input type="text" name="passord" placeholder="Passord"><br>
+            <input type="submit" value="Logg inn">
         </form>
     </div>
+
 </body>
 </html>
