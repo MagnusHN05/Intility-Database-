@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="loginside">
@@ -14,7 +15,7 @@
             <input type="text" name="Bruker" placeholder="Brukernavn">
             <p>passord</p>
             <input type="text" name="passord" placeholder="Passord"><br>
-            <input type="submit" value="Logg inn">
+            <button type="submit">login</button>
         </form>
     </div>
 
