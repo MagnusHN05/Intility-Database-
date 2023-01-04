@@ -11,10 +11,14 @@
 <div class="loginside">
         <h1>Login</h1>
         <form action="intility.php" method="post">
-            <p>brukernavn/passord</p>
+            <div id="brukernavn-loggin">
+            <p>Brukernavn</p>
             <input type="text" name="Bruker" placeholder="Brukernavn">
-            <p>passord</p>
+            </div>
+            <div id="passord-loggin">
+            <p>Passord</p>
             <input type="text" name="passord" placeholder="Passord"><br>
+            </div>
             <div id="knapper">
                 <form action="legg_til_elever.php">
                     <button type="submit">SignUp</button>
@@ -24,6 +28,6 @@
             
         </form>
     </div>
-
+<script src="loggin.js"></script>
 </body>
 </html>
