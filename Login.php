@@ -15,7 +15,13 @@
             <input type="text" name="Bruker" placeholder="Brukernavn">
             <p>passord</p>
             <input type="text" name="passord" placeholder="Passord"><br>
-            <button type="submit">login</button>
+            <div id="knapper">
+                <form action="legg_til_elever.php">
+                    <button type="submit">SignUp</button>
+                </form>
+                 <button type="submit" id="blueknapp">Login</button>
+            </div>
+            
         </form>
     </div>
 

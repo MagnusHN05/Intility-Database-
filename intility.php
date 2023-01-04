@@ -71,6 +71,7 @@
 
     if($loggetinn) {
         echo "Du har logget inn";
+        header('Location: /Main.html');
     }
     else {
         echo "Finner ikke brukernavn og passord";
