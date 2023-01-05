@@ -18,12 +18,15 @@
             <div id="passord-input">
                 <p>Passord</p>
                 <input type="Password" name="passord" placeholder="Passord" id="password"><br>
+                <span>
+                    <i id="eye" class="fa fa-eye" aria-hidden="true" onclick="censorFunc()"></i>
+                </span>
             </div>
             <div id="knapper">
                 <form action="legg_til_elever.php">
                     <button type="submit">SignUp</button>
                 </form>
-                 <button type="submit" id="blueknapp">signup</button>
+                 <button type="submit" id="blueknapp">Login</button>
             </div>
             
         </form>
