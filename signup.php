@@ -72,7 +72,7 @@ if($kobling->connect_error) {
 
 $kobling->set_charset("utf8"); 
      // Construct the MySQL INSERT statement
-$sql = "INSERT INTO users (email, username, passord) VALUES ('$email', '$username', '$hashedPassword')";
+$sql = "INSERT INTO user (Email, Brukernavn, Passord) VALUES ('$email', '$username', '$hashedPassword')";
 
 // Execute the INSERT statement and check for errors
 if($kobling->query($sql)) {
