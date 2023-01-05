@@ -20,31 +20,31 @@
     text-decoration: underline;
     text-decoration-color:white;
     }
-    .loginside{
+    .signupside{
     width: 350px;
     top: 50%;
     left: 50%;
     transform: translate( -50%, -50%);
     position: absolute
     }
-    .loginside h1{
+    .signupside h1{
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     margin: 40px 0;
     }
-    .loginside p{
+    .signupside p{
     font-size: 20px;
     margin: 15px 0;
     }
     
-    .loginside input{
+    .signupside input{
     font-size: 16px;
     width: 95%;
     padding: 15px 10px;
     outline: none;
     }
-    .loginside button{
+    .signupside button{
     font-size: 18px;
     font-weight: bold;
     margin: 20px 0;
@@ -59,13 +59,13 @@
     #knapper{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     }
     span{
     position: absolute;
     right: 10px;
     transform: translate(0,-50%);
-    top: 73.5%;
+    top: 79%;
     cursor: pointer;
     }
     .fa{

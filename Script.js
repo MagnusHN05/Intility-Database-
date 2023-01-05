@@ -79,14 +79,3 @@ tommelned.addEventListener('click', function(){
   counttommelned.innerHTML = count4;
 })
 
-  /*
-let heart = 0;
-let smiley = 0;
-let tommelopp = 0;
-let tommelned = 0;
-
-function countClicks1(){
-    heart++;
-    document.getElementById('heart').innerHTML = heart;
-}
-*/
