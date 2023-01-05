@@ -1,8 +1,17 @@
-function myFunction() {
-    var x = document.getElementById("mittpassord");
-    if (x.type === "passord") {
-      x.type = "text";
-    } else {
-      x.type = "passord";
+var state = false;
+function censorFunc(){
+    if(state){
+        document.getElementById("password").setAttribute("type","password");
+        document.getElementById("eye").style.color='#7a797e';
+        state = false
+
     }
-  }
+    else{
+        document.getElementById("password").setAttribute("type", "text");
+        document.getElementById("eye").style.color='#5887ef';
+        state = true;
+    }
+}
+
+
+
