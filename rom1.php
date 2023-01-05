@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="iconer">
-    <i id="smiley" class="far fa-face-smile" onclick="changeIconSmiley()" onclick="countClicks1"></i>
+    <i id="smiley" class="far fa-face-smile" onclick="changeIconSmiley()"></i>
     <i id="heart" class="far fa-heart" onclick="changeIconHeart()"></i>
     <i id="tommelopp" class="far fa-thumbs-up" onclick="changeIconTommelopp()"></i>
     <i id="tommelned" class="far fa-thumbs-down" onclick="changeIconTommelned()"></i>
