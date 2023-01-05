@@ -27,10 +27,12 @@
                 <form action="legg_til_elever.php">
                     <button type="submit">SignUp</button>
                 </form>
-                 <button type="submit" id="blueknapp">Login</button>
-            </div>
+                
             
         </form>
+                    <button type="submit" id="blueknapp">Login</button>
+            </div>
+
     </div>
 <script src="loggin.js"></script>
 </body>
