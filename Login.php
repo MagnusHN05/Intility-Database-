@@ -24,14 +24,16 @@
                 </span>
             </div>
             <div id="knapper">
-                <form action="legg_til_elever.php">
-                    <button type="submit">SignUp</button>
-                </form>
                 
+                <button type="submit" id="blueknapp">Login</button>
+            </div>
             
         </form>
-                    <button type="submit" id="blueknapp">Login</button>
-            </div>
+        <div id="knapper">
+            <form action="signup.php" method="post">
+                <button type="submit">SignUp</button>
+            </form>
+        </div>
 
     </div>
 <script src="loggin.js"></script>
