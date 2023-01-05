@@ -35,6 +35,43 @@
             
         </form>
     </div>
+    <?php
+
+// Connect to the MySQL database
+$host = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "mydb";
+
+$kobling = new mysqli($tjener, $brukernavn, $passord, $database);
+
+if($kobling->connect_error) {
+    die("Noe gikk galt: " . $kobling->connect_error);
+} else {
+    echo "Koblingen virker.<br>";
+}
+
+    // Angi UTF-8 som tegnsett
+     $kobling->set_charset("utf8");
+     $Email = $_GET["Email"];
+     $brukernavn = $_GET["brukernavn"];
+     $Passord = $_GET["Passord"];
+
+
+
+// Construct the MySQL INSERT statement
+$sql = "INSERT INTO users (email, username, passord) VALUES ('$email', '$username', '$hashedPassword')";
+
+// Execute the INSERT statement and check for errors
+if($kobling->query($sql)) {
+    echo "Spørringen $sql ble gjennomført.";
+} else {
+    echo "Noe gikk galt med spørringen $sql ($kobling->error).";
+}	
+
+
+?>
+
 <script src="signup.js"></script>
 </body>
 </html>
