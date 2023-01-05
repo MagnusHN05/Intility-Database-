@@ -8,8 +8,9 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 250px;
-    min-height: 250px;
+    width: 600px;
+    flex-direction: row;
+    margin: auto;
   }
   /*
   .box {
@@ -27,8 +28,8 @@ h1{
     align-items: center;
     justify-content: center;
     margin: 10px;
-    width: 750px;
-    height: 750px;
+    width: 250px;
+    height: 250px;
     color: white;
 }
 a:hover .box {
