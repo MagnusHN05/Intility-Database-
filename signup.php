@@ -38,28 +38,40 @@
     <?php
 
 // Connect to the MySQL database
-$host = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "mydb";
+$tjener = "localhost"; 
 
-$kobling = new mysqli($tjener, $brukernavn, $passord, $database);
+$brukernavn = "root"; 
 
-if($kobling->connect_error) {
-    die("Noe gikk galt: " . $kobling->connect_error);
-} else {
-    echo "Koblingen virker.<br>";
-}
+$passord = "root"; 
 
-    // Angi UTF-8 som tegnsett
-     $kobling->set_charset("utf8");
-     $Email = $_GET["Email"];
-     $brukernavn = $_GET["brukernavn"];
-     $Passord = $_GET["Passord"];
+$database = "mydb"; //Endre på denne til din database 
 
 
 
-// Construct the MySQL INSERT statement
+// Opprette en kobling 
+
+$kobling = new mysqli($tjener, $brukernavn, $passord, $database); 
+
+
+
+// Sjekk om koblingen virker 
+
+if($kobling->connect_error) { 
+
+    die("Noe gikk galt: " . $kobling->connect_error); 
+
+} else { 
+
+    echo "Koblingen virker.<br>"; 
+
+} 
+
+
+
+// Angi UTF-8 som tegnsett 
+
+$kobling->set_charset("utf8"); 
+     // Construct the MySQL INSERT statement
 $sql = "INSERT INTO users (email, username, passord) VALUES ('$email', '$username', '$hashedPassword')";
 
 // Execute the INSERT statement and check for errors
