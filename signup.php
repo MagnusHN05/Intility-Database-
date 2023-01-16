@@ -11,7 +11,7 @@
 <body>
 <div class="signupside">
         <h1>SignUp</h1>
-        <form action="login.php" method="post">
+        <form action="lag_ny_bruker.php" method="post">
             <div id="email-input">
                 <p>E-mail</p>
                 <input type="text" name="email" placeholder="Email">
@@ -28,9 +28,7 @@
                 </span>
             </div>
             <div id="knapper">
-                <form action="login.php">
-                    <button type="submit" id="blueknapp">SignUp</button>
-                </form>
+                <button type="submit" id="blueknapp">SignIn</button>
             </div>
             
         </form>

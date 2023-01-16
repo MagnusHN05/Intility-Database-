@@ -25,7 +25,7 @@
             </div>
             <div id="knapper">
                 
-                <button type="submit" id="blueknapp">Login</button>
+                <button type="submit" id="rightknapp" id="blueknapp">Login</button>
             </div>
             
         </form>
